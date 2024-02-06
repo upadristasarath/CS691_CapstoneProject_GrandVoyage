@@ -1,4 +1,4 @@
-# CS691_CapstoneProject_OnePiece
+# CS691_CapstoneProject_GrandVoyage
 
 [View Project Description as PDF](https://github.com/upadristasarath/CS691_CapstoneProject_OnePiece) | <a id="raw-url" href="https://github.com/upadristasarath/CS691_CapstoneProject_OnePiece">Download Project Description as Word Document</a>
 
