@@ -23,7 +23,7 @@ Link : https://github.com/users/upadristasarath/projects/1/views/1
 
 * Clone the repository
 ```
-git clone https://github.com/upadristasarath/CS691_CapstoneProject_OnePiece.git
+git clone https://github.com/upadristasarath/CS691_CapstoneProject_GrandVoyage.git
 ```
 
 ## Running the application:
