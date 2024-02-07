@@ -1,6 +1,6 @@
-# CS691_CapstoneProject_OnePiece
+# CS691_CapstoneProject_MealMate
 
-[View Project Description as PDF](https://github.com/upadristasarath/CS691_CapstoneProject_OnePiece) | <a id="raw-url" href="https://github.com/upadristasarath/CS691_CapstoneProject_OnePiece">Download Project Description as Word Document</a>
+[View Project Description as PDF](https://github.com/upadristasarath/CS691_CapstoneProject_MealMate) | <a id="raw-url" href="https://github.com/upadristasarath/CS691_CapstoneProject_MealMate">Download Project Description as Word Document</a>
 
 ## File Structure
 
@@ -14,6 +14,10 @@ Our application is structured as follows:
 ## Technology Stack:
 * Version Control: Git
 * Code Editor : Visual Studio Code
+* Frontend: ReactNative
+* Backend: Python, FastAPI
+* Database: MongoDB
+* Cloud: Firebase
 
 ## Project Board:
 
@@ -23,7 +27,7 @@ Link : https://github.com/users/upadristasarath/projects/1/views/1
 
 * Clone the repository
 ```
-git clone https://github.com/upadristasarath/CS691_CapstoneProject_OnePiece.git
+git clone https://github.com/upadristasarath/CS691_CapstoneProject_MealMate.git
 ```
 
 ## Running the application:
