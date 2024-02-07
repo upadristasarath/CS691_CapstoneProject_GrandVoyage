@@ -1,6 +1,6 @@
-# CS691_CapstoneProject_GrandVoyage
+# CS691_CapstoneProject_MealMate
 
-[View Project Description as PDF](https://github.com/upadristasarath/CS691_CapstoneProject_OnePiece) | <a id="raw-url" href="https://github.com/upadristasarath/CS691_CapstoneProject_OnePiece">Download Project Description as Word Document</a>
+[View Project Description as PDF](https://github.com/upadristasarath/CS691_CapstoneProject_MealMate) | <a id="raw-url" href="https://github.com/upadristasarath/CS691_CapstoneProject_MealMate">Download Project Description as Word Document</a>
 
 ## File Structure
 
@@ -23,7 +23,7 @@ Link : https://github.com/users/upadristasarath/projects/1/views/1
 
 * Clone the repository
 ```
-git clone https://github.com/upadristasarath/CS691_CapstoneProject_GrandVoyage.git
+git clone https://github.com/upadristasarath/CS691_CapstoneProject_MealMate.git
 ```
 
 ## Running the application:
