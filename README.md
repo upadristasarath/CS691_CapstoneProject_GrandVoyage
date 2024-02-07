@@ -14,6 +14,10 @@ Our application is structured as follows:
 ## Technology Stack:
 * Version Control: Git
 * Code Editor : Visual Studio Code
+* Frontend: ReactNative
+* Backend: Python, FastAPI
+* Database: MongoDB
+* Cloud: Firebase
 
 ## Project Board:
 
