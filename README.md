@@ -1,6 +1,7 @@
 # CS691_CapstoneProject_MealMate
 
-[View Project Description as PDF](https://github.com/upadristasarath/CS691_CapstoneProject_MealMate) | <a id="raw-url" href="https://github.com/upadristasarath/CS691_CapstoneProject_MealMate">Download Project Description as Word Document</a>
+
+[View Project Description as PDF](https://github.com/upadristasarath/CS691_CapstoneProject_MealMate/blob/main/ProjectDocs/Artifacts/Project%20Description/Project%20Description.pdf) | <a id="raw-url" href="https://github.com/upadristasarath/CS691_CapstoneProject_MealMate/blob/main/ProjectDocs/Artifacts/Project%20Description/Project%20Description.docx">Download Project Description as Word Document</a>
 
 ## File Structure
 
