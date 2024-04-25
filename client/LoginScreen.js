@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import {
   StyleSheet,
   View,
@@ -6,26 +6,21 @@ import {
   TouchableOpacity,
   SafeAreaView,
   useWindowDimensions,
-  TextInput,
-  Alert,
 } from "react-native";
 import LottieView from "lottie-react-native";
+import { auth } from "./firebaseConfig";
 
 export default function LoginScreen({ navigation }) {
   const { width } = useWindowDimensions();
-  const [username, setUsername] = useState("");
-  const [password, setPassword] = useState("");
 
-  const handleLogin = () => {
-    if (username === "Admin" && password === "admin") {
-      // Use replace to reset the navigation stack and prevent going back to the Login screen
-      navigation.replace("Home");
-    } else {
-      Alert.alert(
-        "Invalid Credentials",
-        "The username or password you entered is incorrect.",
-      );
-    }
+  const handleSignIn = () => {
+    // Navigate to the Sign in screen
+    navigation.navigate("SignIn");
+  };
+
+  const handleSignUp = () => {
+    // Navigate to the Sign up screen
+    navigation.navigate("SignUp");
   };
 
   return (
@@ -34,30 +29,18 @@ export default function LoginScreen({ navigation }) {
         <Text style={styles.logo}>MealMate</Text>
         <Text style={styles.subheading}>Scan and get recipe</Text>
       </View>
-
       <LottieView
         source={require("./assets/lottie/cooking.json")}
         autoPlay
         loop
         style={{ width: width * 0.9, height: 300 }}
       />
-
-      <View style={styles.inputContainer}>
-        <TextInput
-          style={styles.input}
-          placeholder="Username"
-          value={username}
-          onChangeText={setUsername}
-        />
-        <TextInput
-          style={styles.input}
-          placeholder="Password"
-          value={password}
-          onChangeText={setPassword}
-          secureTextEntry
-        />
-        <TouchableOpacity style={styles.button} onPress={handleLogin}>
-          <Text style={styles.buttonText}>Log in</Text>
+      <View style={styles.buttonContainer}>
+        <TouchableOpacity style={styles.button} onPress={handleSignIn}>
+          <Text style={styles.buttonText}>Sign in</Text>
+        </TouchableOpacity>
+        <TouchableOpacity style={styles.button} onPress={handleSignUp}>
+          <Text style={styles.buttonText}>Sign up</Text>
         </TouchableOpacity>
       </View>
     </SafeAreaView>
@@ -88,17 +71,9 @@ const styles = StyleSheet.create({
     color: "#6e6e6e",
     marginTop: 10,
   },
-  inputContainer: {
+  buttonContainer: {
     width: "80%",
     marginBottom: 20,
-  },
-  input: {
-    height: 40,
-    marginBottom: 12,
-    borderWidth: 1,
-    borderColor: "#ddd",
-    borderRadius: 5,
-    padding: 10,
   },
   button: {
     flexDirection: "row",
@@ -107,6 +82,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
     backgroundColor: "#097969",
+    marginBottom: 12,
   },
   buttonText: {
     fontSize: 20,

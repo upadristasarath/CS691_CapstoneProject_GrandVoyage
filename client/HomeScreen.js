@@ -1,29 +1,67 @@
 import React from "react";
 import { View, Text, StyleSheet } from "react-native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
+import { createStackNavigator } from "@react-navigation/stack";
 import { Ionicons } from "@expo/vector-icons";
 import CameraScreen from "./CameraScreen";
-import ProfileScreen from "./ProfileScreen";
+import ProfileNavigator from "./ProfileNavigator";
+import HistoryScreen from "./HistoryScreen";
+import ImagePreviewScreen from "./ImagePreviewScreen";
+import IdentifiedItemsScreen from "./IdentifiedItemsScreen";
+import RecipeScreen from "./RecipeScreen";
+import RecipeDetailsScreen from "./RecipeDetailsScreen";
 
-function HistoryScreen() {
+const Tab = createBottomTabNavigator();
+const CameraStack = createStackNavigator();
+const HistoryStack = createStackNavigator();
+
+function CameraStackScreen() {
   return (
-    <View style={styles.center}>
-      <Text>History Screen</Text>
-    </View>
+    <CameraStack.Navigator>
+      <CameraStack.Screen
+        name="Camera"
+        component={CameraScreen}
+        options={{ headerShown: false }}
+      />
+      <CameraStack.Screen
+        name="ImagePreview"
+        component={ImagePreviewScreen}
+        options={{ headerShown: false }}
+      />
+      <CameraStack.Screen
+        name="IdentifiedItemsScreen"
+        component={IdentifiedItemsScreen}
+        options={{ headerTitle: "Identified Items", headerShown: false }}
+      />
+      <CameraStack.Screen
+        name="Recipe"
+        component={RecipeScreen}
+        options={{ headerTitle: "Recipe", headerShown: false }}
+      />
+    </CameraStack.Navigator>
   );
 }
 
-// function ProfileScreen() {
-//   return (
-//     <View style={styles.center}>
-//       <Text>Profile Screen</Text>
-//     </View>
-//   );
-// }
+function HistoryStackScreen() {
+  return (
+    <HistoryStack.Navigator>
+      <HistoryStack.Screen
+        name="History"
+        component={HistoryScreen}
+        options={{ headerShown: false }}
+      />
+      <HistoryStack.Screen
+        name="RecipeDetails"
+        component={RecipeDetailsScreen}
+        options={({ route }) => ({
+          title: route.params.recipe.name,
+        })}
+      />
+    </HistoryStack.Navigator>
+  );
+}
 
-const Tab = createBottomTabNavigator();
-
-function HomeScreen() {
+function HomeScreen({ route }) {
   return (
     <Tab.Navigator
       initialRouteName="Camera"
@@ -39,9 +77,10 @@ function HomeScreen() {
             iconName = focused ? "person" : "person-outline";
           }
 
-          // Use Ionicons from @expo/vector-icons
           return <Ionicons name={iconName} size={size} color={color} />;
         },
+        tabBarStyle: styles.tabBar,
+        tabBarLabelStyle: styles.tabBarLabel,
         headerShown: false,
       })}
       tabBarOptions={{
@@ -49,9 +88,13 @@ function HomeScreen() {
         inactiveTintColor: "gray",
       }}
     >
-      <Tab.Screen name="History" component={HistoryScreen} />
-      <Tab.Screen name="Camera" component={CameraScreen} />
-      <Tab.Screen name="Profile" component={ProfileScreen} />
+      <Tab.Screen name="History" component={HistoryStackScreen} />
+      <Tab.Screen name="Camera" component={CameraStackScreen} />
+      <Tab.Screen
+        name="Profile"
+        component={ProfileNavigator}
+        initialParams={{ user: route.params.user }}
+      />
     </Tab.Navigator>
   );
 }
@@ -61,6 +104,16 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: "center",
     justifyContent: "center",
+  },
+  tabBar: {
+    backgroundColor: "#fff",
+    borderTopWidth: 1,
+    borderTopColor: "#ccc",
+    paddingVertical: 8,
+  },
+  tabBarLabel: {
+    fontSize: 12,
+    fontWeight: "bold",
   },
 });
 

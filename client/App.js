@@ -1,8 +1,10 @@
 import * as React from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
-import LoginScreen from "./LoginScreen"; // Ensure this path is correct
-import HomeScreen from "./HomeScreen"; // Ensure this path is correct to your actual Home screen component
+import LoginScreen from "./LoginScreen";
+import HomeScreen from "./HomeScreen";
+import SignInScreen from "./SignInScreen";
+import SignUpScreen from "./SignUpScreen";
 
 const Stack = createStackNavigator();
 
@@ -20,7 +22,16 @@ function App() {
           component={HomeScreen}
           options={{ headerShown: false }}
         />
-        {/* Add more screens as needed */}
+        <Stack.Screen
+          name="SignIn"
+          component={SignInScreen}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="SignUp"
+          component={SignUpScreen}
+          options={{ headerShown: false }}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );
