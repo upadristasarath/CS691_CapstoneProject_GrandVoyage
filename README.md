@@ -10,6 +10,14 @@ Introducing the "Meal Mate" web app – your new kitchen companion! Our goal is 
 * Users, can effortlessly discover recipies with Meal Mate by simply snapping a pic of your veggies, eliminating the need for browsing YouTube or recipe books
 * Users can enjoy convenient access to personalize recipe suggesting based on available vegetables at home with Meal Mate, streamlining your cooking experiece
 
+## Project Board:
+
+Link : https://github.com/users/upadristasarath/projects/1
+
+## API Documentation:
+
+Link : 
+
 ## File Structure
 
 Our application is structured as follows:
