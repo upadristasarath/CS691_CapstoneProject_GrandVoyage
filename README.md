@@ -20,13 +20,12 @@ Our application is structured as follows:
 | TeamPhotos   | This folder contains the photos of each team member that are used on the project Wiki page.   
 
 ## Technology Stack:
-* Version Control: Git
-* Code Editor : Visual Studio Code
-* Frontend: ReactNative
-* Backend: Python, FastAPI
-* Database: MongoDB
-* Cloud: Firebase
-<link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" title="React" alt="React" width="120" height="120"/>&nbsp;
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" title="Python" alt="Python" width="120" height="120"/>&nbsp;
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/fastapi/fastapi-original.svg" title="Fast API" alt="FastAPI" width="120" height="120"/>&nbsp;
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" title="MongoDB" alt="Mongo DB" width="120" height="120"/>&nbsp;
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original.svg" title="Firebase" alt="Firebase" width="120" height="120"/>&nbsp;
 
 ## Project Board:
 
