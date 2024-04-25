@@ -14,10 +14,6 @@ Introducing the "Meal Mate" web app – your new kitchen companion! Our goal is 
 
 Link : https://github.com/users/upadristasarath/projects/1
 
-## API Documentation:
-
-Link : https://github.com/users/upadristasarath/projects/1
-
 ## File Structure
 
 Our application is structured as follows:
