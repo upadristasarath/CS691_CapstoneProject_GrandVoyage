@@ -56,5 +56,7 @@ build:ios
 * Publish to the App Store
 
 ## Running the application:
-
+```
+npm start
+```
 
