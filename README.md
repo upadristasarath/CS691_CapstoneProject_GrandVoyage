@@ -32,25 +32,6 @@ Our application is structured as follows:
 Link : https://github.com/users/upadristasarath/projects/1/views/1
 
 ## Running the Application:
-1.	Access the GitHub Repository:
-  *	Clone the repository to your local machine using git clone [repository-url].
-  *	Ensure you switch to the appropriate branch if needed using git checkout [branch-name].
-2.	Install Dependencies:
-*	Run npm install or yarn to install all required dependencies.
-3.	Expo Configuration:
-*	Log in to your Expo account using the Expo CLI with expo login.
-*	Update the app.json file with the correct iOS bundle identifier and Expo configuration.
-4.	Build the iOS App:
-*	Use the Expo CLI to build your iOS app with expo build:ios.
-*	Choose either a simulator build (for testing) or an archive (for uploading to the App Store).
-5.	Upload to App Store Connect:
-*	Once the build is completed, use Transporter (available on the Mac App Store) to upload the .ipa file to App Store Connect.
-*	Ensure you have a valid Apple Developer Account and have set up all the necessary certificates and provisioning profiles in advance.
-6.	Test with TestFlight:
-*	Before releasing to the public, use TestFlight to distribute the app to testers for a final check.
-7.	Publish to the App Store:
-*	After testing, submit the app for review via App Store Connect.
-*	Once approved, set a release date or release it manually to the App Store.
 
 * Clone the repository
 ```
